@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.box1{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.logo{
+    width: 150px;
+    height: 50px;
+   
+    
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+}
+.me {
+    margin-left: 70px;
+    padding-top: 15px;
+    width: 70vw;
+    display: flex;
+    list-style: none;
+    gap: 40px;
+
+    align-items: center;
+}  
+.me .link{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    letter-spacing: .5px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.me .link::before,
+.me .link::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background:rgba(128, 128, 128, 0.59) ;
+    transition: .5s;
+}
+.me .link::after{
+    left: 0;
+    bottom: -5px;
+}
+.me .link::before{
+    right: 0;
+    top: -5px;
+}
+.me .link:hover::after,
+.me .link:hover::before{
+    width: 100%;
+
+}
+.background{
+ width: 100%;
+ height: 900px;
+position: relative;
+
+  
+}
+.background img{
+    width: 80%;
+    height: 100%;
+    margin-left: 100px;
+}
+.page{
+    font-size: 100px;
+    position: absolute;
+    top:270px;
+    left: 400px;
+    font-weight: bold;
+    color:rgba(255, 255, 255, 0.695);
+  
+       
+
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.box-slide-bar{
+    width: 20%;
+    background-color:gray;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -300px;
+
+    z-index: 1111;
+    transition: 0.5s;
+   
+    
+}
+.box-slide-bar ul{
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+.box-slide-bar ul li{
+    width: 100%;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.539);
+    cursor: pointer;
+
+
+}
+.box-slide-bar ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.box-slide-bar ul li:hover{
+    box-shadow: 1px 1px 3px rgb(206, 201, 201);
+}
+.popup{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.251);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.collect {
+    border: none;
+    outline: none;
+    padding: 15px;
+    position:relative;
+    left: 520px;
+    bottom:220px;
+    
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.collect:hover{
+    color: #fff;
+    background-color: gray;
+    transition: 0.5s;
+}
+.product{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+
+}
+ .product .cards img {
+    width: 250px;
+    height: 300px;
+    border: 2px solid #ff3d0036;
+    border-radius: 13px;
+    box-shadow:4px 7px 7px 0px #00000042 ;
+    cursor: pointer;
+    margin: 30px;
+    transition: 0.5s;
+
+}
+
+.cards :hover img{
+
+    filter: grayscale(1);
+       
+        transform: scale(1.03);
+        box-shadow:  0 0 5px #ffff66,
+    0 0 25px #ffff66,
+    0 0 50px #ffff66,
+    0 0 100px #ffff66
+    ;
+}
+
+.bo{
+    padding: 17px 10px;
+    line-height: 25px;
+}
+.bo .title{
+    font-size: 20px;
+    text-align: center;
+
+}
+.bo .model{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+
+}
+.bo .price{
+    color: rgba(255, 0, 0, 0.686);
+    float: right;
+}
+.box-slide{
+    position: relative;
+    width: 55rem;
+    height: 35rem;
+    display: flex;
+  
+}
+.slide{
+    width: 100%;
+    height: 100%;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+ion-icon{
+    font-size: 40px;
+    padding: 10px 0;
+    position: absolute;
+    right: 5px;
+    top: 13rem;
+   
+    color: rgb(27, 167, 146);
+    cursor: pointer;
+    
+}
+.back{
+    left: 5px;
+}
+.slide-page{
+    height:100%;
+    width: 40%;
+
+  position: relative;
+ left: 900px;
+ bottom: 400px;
+}
+.slide-page h3{
+    font-weight: bold;
+    color:black;
+}
+ .shop-now{
+    position: relative;
+    right: 430px;
+    top: 60px;
+    border-radius:15px;
+       border: none;
+    outline: none;
+        padding: 10px;
+            font-size: 20px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+}
+.shop-now:hover{
+       color: #fff;
+    background-color: gray;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+    .box-under-footer{
+ margin-bottom: 50px;
+        /* background-color: aqua; */
+     
+    }
+    
+    .box-under-footer .uner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .box-under-footer .uner .boxicon{
+        width: 50px;
+        height: 50px;
+        background-color: gray;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box-under-footer .uner .boxicon i{
+        color: aliceblue;
+        font-size: 20px;
+    }
+    
+    .box-under-footer .uner .boxtext{
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .box-under-footer .uner .boxtext h4{
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .box-under-footer .uner .boxdes p{
+        font-size: 15px;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   .contact{
+    position: relative;
+    bottom: 80px;
+    display: flex;
+    min-height: 100vh;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(nike.jpeg);
+    background-size: cover;
+    flex-direction: column;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+}
+.gg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.gg .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.gg .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+.gg .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.gg .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    color: #fff;
+
+font-weight: 300;
+}
+.gg .contactInfo .box .text h2{
+    font-weight: 500;
+    color:#00bcd4
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
+    0px 2px 4px rgba(0,0,0,0.1), 
+    0px 4px 8px rgba(0,0,0,0.1), 
+    0px 8px 16px rgba(0,0,0,0.1);
+
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.contactForm .inputBox input ,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #333;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+
+{
+    color: #e91e63;
+    font-size: 12px;
+
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
